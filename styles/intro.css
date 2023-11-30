@@ -1,0 +1,38 @@
+#intro {
+  color: white;
+  background: url(../assets/img/intro_bg.png) center 75% / cover no-repeat;
+  padding-top: 50px;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.intro-name {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.h1-bg {
+  background: url(../assets/img/h1_bg.png) center / 100% 100% no-repeat;
+  padding: 2px 55px;
+}
+
+.about-btn {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--yellow);
+  text-transform: uppercase;
+}
+
+@media (max-width: 465px){
+  .intro-name {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
