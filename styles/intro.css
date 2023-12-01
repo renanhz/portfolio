@@ -1,6 +1,9 @@
 #intro {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
   color: white;
-  background: url(../assets/img/intro_bg.png) center 75% / cover no-repeat;
   padding-top: 50px;
   height: 100vh;
   flex-direction: column;
@@ -10,26 +13,28 @@
 }
 
 .intro-name {
-  font-size: 3em;
+  font-family: "Matrix";
+  font-size: 4em;
   text-transform: uppercase;
+  text-shadow: var(--green) 1px 0 10px;
 }
 
-.h1-bg {
-  background: url(../assets/img/h1_bg.png) center / 100% 100% no-repeat;
-  padding: 2px 55px;
+#intro p{
+  font-weight: bold;
 }
 
 .about-btn {
   padding: 12px 20px;
   text-decoration: none;
   color: var(--black);
-  background-color: var(--yellow);
+  font-weight: bold;
+  background-color: var(--green);
   text-transform: uppercase;
 }
 
 @media (max-width: 465px){
   .intro-name {
-    font-size: 1.5em;
+    font-size: 3em;
   }
 
   p {

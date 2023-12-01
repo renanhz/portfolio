@@ -1,22 +1,21 @@
 :root {
   --black: #010101;
-  --red: #FF0B00;
-  --dark-red: #C10B0B;
-  --yellow: #FDD700;
-  --gray: #5E5E5E;
-  --pink: #FD86CB;
-  --dark-blue: #2D48B9;
-  --light-blue: #2BD3FB;
+  --green: #00C853;
 }
 
 @font-face {
-  font-family: "Persona";
-  src: url(../assets/fonts/PersonifiedUXRegular.ttf);
+  font-family: "Matrix";
+  src: url(../assets/fonts/matrix.ttf);
+}
+
+@font-face {
+  font-family: "NovaSquare";
+  src: url(../assets/fonts/NovaSquare-Regular.ttf);
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Persona";
+  font-family: "NovaSquare";
 }
 
 html, body {
@@ -25,19 +24,24 @@ html, body {
 
 body {
   margin: 0;
-  background-color: var(--dark-red);
+  background-color: var(--black);
 }
 
 header {
-  height: 50px;
+  z-index: 20;
   position: fixed;
   top: 0;
-  background-color: var(--black);
   width: 100%;
 }
 
+canvas {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
 
 ul {
+  font-size: 1.2em;
   display: flex;
   margin: 0;
   list-style: none;
@@ -57,4 +61,8 @@ a {
 
 p {
   font-size: 1.5em;
+}
+
+h1 {
+  margin: 0;
 }
