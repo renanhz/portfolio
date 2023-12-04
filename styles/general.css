@@ -12,6 +12,7 @@
 * {
   box-sizing: border-box;
   font-family: "NovaSquare";
+  color: white;
 }
 
 html, body {
@@ -41,7 +42,6 @@ ul {
   display: flex;
   margin: 0;
   list-style: none;
-  color: white;
 }
 
 li {
@@ -63,6 +63,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 .container {
   padding: 12px;
   margin: 0 auto;
@@ -72,7 +76,6 @@ h1 {
 .title {
   text-transform: uppercase;
   text-shadow: var(--green) 1px 0 10px;
-  color: white;
   letter-spacing: 3px;
 }
 
@@ -81,14 +84,14 @@ h1 {
   margin-bottom: 1em;
 }
 
-.social a {
+.social a, .about-btn {
   background-color: var(--black);
   border: 1px solid var(--green);
   padding: 8px;
   display: flex;
   align-items: center;
-  margin: 0 8px;
   border-radius: 4px;
+  margin-right: 16px;
 }
 
 .social a span{
@@ -103,7 +106,6 @@ h1 {
   right: 0;
   left: 0;
   position: absolute;
-  color: white;
   padding-top: 50px;
   height: 100vh;
   flex-direction: column;
@@ -114,6 +116,7 @@ h1 {
 
 .intro-name {
   font-size: 4em;
+  white-space: nowrap;
 }
 
 #intro p{
@@ -122,16 +125,12 @@ h1 {
 
 .about-btn {
   padding: 12px 20px;
-  text-decoration: none;
-  color: var(--black);
-  font-weight: bold;
-  background-color: var(--green);
   text-transform: uppercase;
 }
 
 @media (max-width: 465px){
   .intro-name {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   p {
@@ -145,7 +144,6 @@ h1 {
 /* ------------ ABOUT ------------ */
 #about {
   width: 100%;
-  border-top: 1px solid var(--green);
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -153,18 +151,19 @@ h1 {
   justify-content: center;
 }
 
-.about-title {
-  font-size: 2em;
-}
-
 .about-container {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.about-desc {
-  padding: 12px;
-  color: white;
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-container span {
+  color: var(--black);
+  background-color: var(--green);
+  padding: 8px;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
