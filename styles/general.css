@@ -3,10 +3,6 @@
   --green: #00C853;
 }
 
-@font-face {
-  font-family: "Matrix";
-  src: url(../assets/fonts/matrix.ttf);
-}
 
 @font-face {
   font-family: "NovaSquare";
@@ -74,10 +70,10 @@ h1 {
 }
 
 .title {
-  font-family: "Matrix";
   text-transform: uppercase;
   text-shadow: var(--green) 1px 0 10px;
   color: white;
+  letter-spacing: 3px;
 }
 
 .social {
@@ -97,6 +93,7 @@ h1 {
 
 .social a span{
   margin-left: 8px;
+  margin-top: 3px;
 }
 
 
@@ -157,9 +154,7 @@ h1 {
 }
 
 .about-title {
-  background-color: var(--black);
   font-size: 2em;
-  color: white;
 }
 
 .about-container {
