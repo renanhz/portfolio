@@ -128,7 +128,7 @@ h2 {
   text-transform: uppercase;
 }
 
-@media (max-width: 465px){
+@media (max-width: 550px){
   .intro-name {
     font-size: 2em;
   }
@@ -166,4 +166,10 @@ h2 {
   padding: 8px;
   margin-right: 12px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    flex-wrap: wrap;
+  }
 }
