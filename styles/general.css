@@ -156,6 +156,8 @@ h2 {
 
 .about-container {
   display: flex;
+  align-items: center;
+  min-height: 600px;
 }
 
 .skills-container {
@@ -176,3 +178,45 @@ h2 {
     flex-wrap: wrap;
   }
 }
+/* ------------ ABOUT ------------ */
+
+
+
+/* ------------ PROJETOS ------------ */
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+}
+
+.card-body {
+  padding: 0 0.8em;
+}
+
+.card-body img {
+  width: 100%;
+}
+
+.card-body p {
+  text-align: justify;
+  font-size: 1em;
+}
+
+.card-links {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.card-links a {
+  margin-right: 8px;
+}
+
+/* ------------ PROJETOS ------------ */
